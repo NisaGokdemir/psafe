@@ -1,0 +1,25 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.service-item.fade-in-up,
+.fade-in-up-heading,
+.fade-in-up-description {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.service-item.fade-in-up.show,
+.fade-in-up-heading.show,
+.fade-in-up-description.show {
+  opacity: 1;
+  transform: translateY(0);
+}

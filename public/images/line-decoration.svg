@@ -1,0 +1,31 @@
+<svg
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlnsXlink="http://www.w3.org/1999/xlink"
+  x="0px"
+  y="0px"
+  viewBox="0 0 100 60"
+  style="margin: 0 auto; height: 35px;"
+  xmlSpace="preserve"
+>
+  <circle
+    cx="50.1"
+    cy="30.4"
+    r="5"
+    style="fill: transparent; stroke-width: 2; stroke-miterlimit: 10;"
+  ></circle>
+  <line
+    x1="55.1"
+    y1="30.4"
+    x2="100"
+    y2="30.4"
+    style="stroke-width: 2; stroke-miterlimit: 10;"
+  ></line>
+  <line
+    x1="45.1"
+    y1="30.4"
+    x2="0"
+    y2="30.4"
+    style="stroke-width: 2; stroke-miterlimit: 10;"
+  ></line>
+</svg>

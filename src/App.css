@@ -1,0 +1,13 @@
+/* #root{
+  background-color: #F9FAFB;
+} */
+
+.container-wrapper {
+  width: 100%;
+  background-color: inherit;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
