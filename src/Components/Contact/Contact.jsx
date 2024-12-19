@@ -3,83 +3,48 @@ import { AiFillStar } from 'react-icons/ai';
 
 const Contact = () => {
   return (
-    <div id='contact' className="container-wrapper">
-      <section className="py-12 relative bg-gray-50 pt-[100px]">
-        <div className="container mx-auto px-3 md:px-4 lg:px-4">
-          <div className="flex flex-col items-center lg:flex-row lg:items-start lg:space-x-20">
-            <div className="max-w-3xl text-center lg:text-left mx-auto md:mx-0">
-              <h2 className="mb-3 text-1xl font-bold text-[#006D77] md:text-4xl lg:text-5xl">
-                Birlikte heyecan verici bir şeyler inşa edelim!
-              </h2>
-              <p className="my-4 max-w-lg pb-4 text-base text-gray-700 sm:text-base md:mb-6 lg:mb-8 mx-auto lg:mx-0">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus.
-              </p>
-              <div className="mb-4 flex justify-center lg:justify-start items-center text-yellow-500">
-                {[...Array(5)].map((_, index) => (
-                  <AiFillStar key={index} className="h-6 w-6" />
-                ))}
-              </div>
-              <p className="mb-8 max-w-lg text-base text-gray-700 sm:text-base mx-auto lg:mx-0">
-                Lorem ipsum dolor sit amet, elit ut aliquam, purus sit amet luctus venenatis elit ut aliquam, purus sit amet luctus venenatis.
-              </p>
-              <div className="flex justify-center lg:justify-start">
-                <img
-                  src="https://firebasestorage.googleapis.com/v0/b/flowspark-1f3e0.appspot.com/o/Tailspark%20Images%2FPlaceholder%20Image.svg?alt=media&token=375a1ea3-a8b6-4d63-b975-aac8d0174074"
-                  alt=""
-                  className="mr-4 inline-block h-16 w-16 rounded-full object-cover"
+    <div className="container-wrapper">
+      <section className="py-12 relative bg-gray-50 pt-[100px] pb-[120px]">
+        <div className="container mx-auto px-5 md:px-6 lg:px-8 grid md:grid-cols-2 gap-20 items-center relative overflow-hidden p-10 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-3xl max-w-7xl bg-white mt-4 font-[sans-serif] before:absolute before:right-0 before:w-[300px] before:bg-blue-400 before:h-full max-md:before:hidden">
+          <div>
+            <h2 className="text-3xl text-[#006D77] font-bold font-manrope leading-normal">İletişime Geçin</h2>
+            <p className="text-sm text-gray-500 mt-4 leading-relaxed">
+              Belirli bir sorunuz mu var veya yeni fırsatları mı keşfetmek istiyorsunuz? Deneyimli ekibimiz sizinle iletişime geçmeye hazır.
+            </p>
+
+            <form>
+              <div className="space-y-4 mt-8">
+                <input
+                  type="text"
+                  placeholder="Ad Soyad"
+                  className="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none"
                 />
-                <div className="flex flex-col">
-                  <h6 className="text-base font-bold">Laila Bahar</h6>
-                  <p className="text-sm text-gray-500">Tasarımcı</p>
-                </div>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none"
+                />
+                <textarea
+                  placeholder="Mesajınızı Yazın"
+                  className="px-2 pt-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none h-40"
+                ></textarea>
               </div>
-            </div>
-            <div className="mx-auto max-w-xl bg-white p-8 text-center rounded-lg shadow-lg mt-8 lg:mt-0">
-              <h3 className="text-2xl font-bold text-[#006D77] md:text-3xl">
-                Ücretsiz teklif alın
-              </h3>
-              <p className="mx-auto mb-6 mt-4 max-w-lg text-base text-gray-700 lg:mb-8">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam, purus sit amet luctus magna fringilla urna.
-              </p>
-              <form className="mx-auto mb-4 max-w-sm text-left" name="wf-form-password" method="get">
-                <div>
-                  <label htmlFor="name" className="mb-1 text-base font-medium text-gray-900">
-                    Adınız
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="mb-4 block h-10 w-full rounded-md border border-gray-300 px-3 text-base text-gray-900"
-                  />
-                </div>
-                <div className="mb-2">
-                  <label htmlFor="email" className="mb-1 text-base font-medium text-gray-900">
-                    Email Adresiniz
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="mb-4 block h-10 w-full rounded-md border border-gray-300 px-3 text-base text-gray-900"
-                  />
-                </div>
-                <div className="mb-5 md:mb-6 lg:mb-8">
-                  <label htmlFor="project" className="mb-1 text-base font-medium text-gray-900">
-                    Açıklama
-                  </label>
-                  <textarea
-                    id="project"
-                    className="mb-2.5 block w-full rounded-md border border-gray-300 px-3 py-2 text-base text-gray-900"
-                    rows="4"
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className="inline-block w-full rounded-md bg-[#006D77] px-6 py-3 text-center text-white font-semibold transition hover:bg-[#00585C]"
-                >
-                  Ücretsiz teklif alın
-                </button>
-              </form>
-            </div>
+
+              <button
+                type="button"
+                className="mt-8 flex items-center justify-center text-sm w-full rounded-md px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white"
+              >
+                Mesaj Gönder
+              </button>
+            </form>
+          </div>
+          <div className="z-10 relative h-full max-md:min-h-[350px]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1285.647358544096!2d32.637548742179355!3d39.96817997187928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d337461f5ba583%3A0x69028e28b9dbac17!2sAltay%2C%20Migros%20Eryaman%2C%2006820%20Etimesgut%2FAnkara!5e0!3m2!1str!2str!4v1734604502896!5m2!1str!2str"
+              className="left-0 top-0 h-full w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg"
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </section>

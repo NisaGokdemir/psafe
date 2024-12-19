@@ -1,31 +1,41 @@
-
-import './App.css'
-
-import StickyNavbar from '../src/Components/Navbar/StickyNavbar.jsx'  
-import Hero from '../src/Components/Hero/Hero.jsx'  
-import About from '../src/Components/About/About.jsx';
-import Feature from '../src/Components/Feature/Feature.jsx';
-import Logos from '../src/Components/Logos/Logos.jsx';
-import Services from '../src/Components/Gallery/Service.jsx'  
-import FaQ from '../src/Components/FaQ/FaQ.jsx';
-import Contact from '../src/Components/Contact/Contact.jsx';
-import Footer from '../src/Components/Footer/Footer.jsx';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import StickyNavbar from './Components/Navbar/StickyNavbar.jsx';
+import Hero from './Components/Hero/Hero.jsx';
+import About from './Components/About/About.jsx';
+import Feature from './Components/Feature/Feature.jsx';
+import Logos from './Components/Logos/Logos.jsx';
+import Services from './Components/Gallery/Service.jsx';
+import FaQ from './Components/FaQ/FaQ.jsx';
+import Contact from './Components/Contact/Contact.jsx';
+import Footer from './Components/Footer/Footer.jsx';
+import Kvkk from './Components/Kvkk/Kvkk.jsx';
 
 function App() {
-
   return (
-    <>
+    <Router>
       <StickyNavbar />
-      <Hero />
-      <About></About>
-      <Feature></Feature>
-      <Logos></Logos>
-      <Services />
-      <FaQ></FaQ>
-      <Contact></Contact>
-      <Footer></Footer>
-    </>
-  )
+      <Routes>
+        {/* Ana Sayfa */}
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <About />
+              <Feature />
+              <Logos />
+              <Services />
+              <FaQ />
+              <Contact />
+              <Footer />
+            </>
+          }
+        />
+        {/* KVKK Sayfası */}
+        <Route path="/kvkk" element={<Kvkk />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
