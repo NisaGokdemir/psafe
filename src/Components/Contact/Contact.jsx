@@ -38,7 +38,7 @@ const Contact = () => {
               </button>
             </form>
           </div>
-          <div className="z-10 relative h-full max-md:min-h-[350px]">
+          <div className="z-0 relative h-full max-md:min-h-[350px]">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1285.647358544096!2d32.637548742179355!3d39.96817997187928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d337461f5ba583%3A0x69028e28b9dbac17!2sAltay%2C%20Migros%20Eryaman%2C%2006820%20Etimesgut%2FAnkara!5e0!3m2!1str!2str!4v1734604502896!5m2!1str!2str"
               className="left-0 top-0 h-full w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg"
