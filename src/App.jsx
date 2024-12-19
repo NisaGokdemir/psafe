@@ -8,7 +8,7 @@ import Services from './Components/Gallery/Service.jsx';
 import FaQ from './Components/FaQ/FaQ.jsx';
 import Contact from './Components/Contact/Contact.jsx';
 import Footer from './Components/Footer/Footer.jsx';
-import Kvkk from './Components/Kvkk/Kvkk.jsx';
+import Kvkk from './Components/Kvkk/KVKK.jsx';
 
 function App() {
   return (
